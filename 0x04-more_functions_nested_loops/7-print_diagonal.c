@@ -11,15 +11,15 @@
 void print_diagonal(int n)
 {
 	int filas;
-	int columns;
+	int columnas;
 
 	if (n > 0)
 	{
 		for (filas = 0; filas < n; filas++)
 		{
-			for (columns = 0; columns <= filas; columns++)
+			for (columnas = 0; columnas <= filas; columnas++)
 			{
-				if (filas == columns)
+				if (filas == columnas)
 				{
 					_putchar ('\\');
 					_putchar ('\n');
