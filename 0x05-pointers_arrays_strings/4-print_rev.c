@@ -3,26 +3,25 @@
 /**
  * print_rev - function prints a string, in reverse
  * followed by a new line.
+ *@s: pointer to string
  *
- * @str: in reverse.
+ * Return: void.
  */
 
 void print_rev(char *s)
 {
-	int i = 0;
-	int total_caracteres = 0;
-	int c = 0;
+	int lenghth, last;
 
-
-	while (str[i] != 0)
+	length = 0;
+	while (s[length] != '\0')
 	{
-		i++;
+		length++;
 	}
-	total_caracteres = i - 1;
 
-	for (c = 0; <= total_caracteres; c++)
+	last = length - 1;
+	for (; last >= 0; last--)
 	{
-		_putchar(str[total_caracteres - c]);
+		_putchar(s[last]);
 	}
 	_putchar('\n');
 }
