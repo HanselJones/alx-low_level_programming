@@ -1,4 +1,2 @@
-#!binbash
-
+#!/bin/bash
 export CFILE=0-main.c ;
- gcc -E $cFILE -o c
