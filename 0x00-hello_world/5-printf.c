@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main - entry point
  * @void: no arguments
  * Description: prints a statement
  *
- * Return: Always 0 (Success)
- */
+ * Return: 0
+ */
 
 int main(void)
 {
