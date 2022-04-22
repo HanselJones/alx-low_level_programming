@@ -1,39 +1,22 @@
 #include <stdio.h>
 
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-	char ch ='z';
-	while(ch >= 'a')
+	char c;
+	int i;
+
+	i = 0;
+	c = 'z';
+	while (i < 26)
 	{
-		putchar(ch);
-		ch--;
-	}
-	putchar('\n');
-	return 0;
-}
-
-8-
-
-#include <stdio.h>
-
-int main(void)
-{
-    char ch = 'a';
-    int i = 0;
-    
-	while (i < 16)
-	{
-		if (i < 10)
-		{
-			putchar(i + '0');
-		}
-		else
-		{
-		    putchar(ch);
-		    ch++;
-		}
+		putchar(c - i);
 		i++;
 	}
-	putchar('\n');
-    return 0;
+	putchar(10);
+	return (0);
 }
