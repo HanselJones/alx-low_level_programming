@@ -1,32 +1,24 @@
 #include "main.h"
 
 /**
- *  main - entry point.
+ * main - check the code for ALX School students.
  *
- *  Description: program starts and ends here.
+ * Program that prints _putchar, followed by a new line
  *
- *  Return: 0 on success.
- *
+ * Return: always 0 (success)
  */
 
 int main(void)
-
 {
+	char s[] = "_putchar";
+	int i = 0;
 
-	char text[8] = "_putchar";
-
-	int i;
-
-	for (i = 0; i < 8; i++)
-
+	while (s[i] != '\0')
 	{
-
-		_putchar(text[i]);
-
+		_putchar(s[i]);
+		i++;
 	}
-
-	_putchar('\n');
+	_putchar(10);
 
 	return (0);
-
 }
