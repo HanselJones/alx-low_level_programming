@@ -1,23 +1,24 @@
 #include <stdio.h>
 
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-    char ch = 'a';
-    int i = 0;
-    
-	while (i < 16)
+	int i;
+	int c = 'a';
+
+	for (i = 0; i < 10; i++)
 	{
-		if (i < 10)
-		{
-			putchar(i + '0');
-		}
-		else
-		{
-		    putchar(ch);
-		    ch++;
-		}
-		i++;
+		putchar(i + 48);
 	}
-	putchar('\n');
-    return 0;
+	while (c <= 'f')
+	{
+		putchar(c);
+		c++;
+	}
+	putchar(10);
+	return (0);
 }
